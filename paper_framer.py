@@ -273,7 +273,7 @@ def combine_title(true_title):
 
 #去除其中的名字
 def remove_name(true_title):
-     os.environ["OPENAI_API_KEY"] = "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"
+     os.environ["OPENAI_API_KEY"] = ""
      llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
       
      true_title= [element['Text'] for element in true_title]

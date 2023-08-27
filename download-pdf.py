@@ -28,9 +28,9 @@ time.sleep(5)
 
 if driver.current_url == 'https://login2.smu.edu.sg/adfs/ls/':
     usr_element = driver.find_element(By.XPATH, '//*[@id="userNameInput"]')
-    usr_element.send_keys('wentao.lu.2023@mse.smu.edu.sg')
+    usr_element.send_keys("Your-SMU-UserName")
     psw_element = driver.find_element(By.XPATH, '//*[@id="passwordInput"]')
-    psw_element.send_keys('Vip9811@')
+    psw_element.send_keys("Your-SMU-Password")
     login_button = driver.find_element(By.XPATH, '//*[@id="submitButton"]')
     login_button.click()
 

@@ -137,7 +137,7 @@ os.chdir("D:\\Singapore Management University\\SMU HACKTHON\\Literature Review")
 article_details = pickle.load(open("article-details2.pkl", "rb"))
 pdf_list = [element['pdf'] for element in article_details]
 author_info = [{'author': element['author'],'year':element['year']} for element in article_details]
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo-16k")
 paper_list = []
 for file,info in zip(pdf_list,author_info):

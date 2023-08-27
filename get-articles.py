@@ -15,8 +15,8 @@ import numpy as np
 # In[2]:
 
 
-API_KEY = "l8xxce68e59740b24a3e96d67f05ab25da03"
-openai.api_key = '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'
+API_KEY = ""
+openai.api_key = ""
 
 
 research_question = f"I want to research the relationship between {sys.argv[1]} and {sys.argv[2]}"
